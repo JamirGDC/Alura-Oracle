@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body onload="inipage()">
+    <div class="container">
+
+        <div class="c-left">
+            <div class="logo"><img src="./img/logo.svg" alt=""></div>
+
+
+            <div class="textbox"><textarea placeholder="Ingrese el texto aqui" name="text" id="1" cols="30"
+                    rows="10"></textarea></div>
+
+
+            <div class="buttons">
+                <div class="c-btn">
+                    <div class="text-c-btn">
+                        <span><img src="./icons/exclamation.svg" alt=""></span>
+                        <p>Solo letras minusculas y sin acentos</p>
+                    </div>
+
+                    <div class="btns">
+                        <button onclick="btnencriptar()">Encriptar</button>
+                        <button onclick="btndesencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c-right">
+            <div class="img"><img id="muneco" src="./img/Muñeco.svg" alt=""></div>
+            <div class="text-encr" id="textencr">
+                <textarea name="encr" id="encrip" cols="20" rows="10"></textarea>
+                <button onclick="copiar()">Copiar</button>
+            </div>
+            <div class="text-c-right" id="parrafo">
+                <p>Ningun mensaje fue encontrado</p><br>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <p>®️Hecho por Jamir Gutierrez Del Carpio Para Alura y Oracle, Abril 2023</p>
+</footer>
+<script src="./script.js"></script> 
+
+</html>
